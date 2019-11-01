@@ -1,10 +1,10 @@
 var arr = [ [1,2] , 3,[4,[5,[6]] , 7] ]
 
 function even(arr) {
-    const stack = [...arr];
-    const result = [];
+    var stack = [...arr];
+    var result = [];
     while (stack.length > 0) {
-      const target = stack.pop();
+      var target = stack.pop();
       if (Array.isArray(target)) {
         stack.push(...target);
       } else {
